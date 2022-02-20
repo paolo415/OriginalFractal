@@ -1,4 +1,4 @@
-int y=0;
+int z=0;
 float a=1.5;
 public void setup ()
 {
@@ -8,14 +8,14 @@ public void draw()
 {
 background (0);
 noFill();
-stroke(100+y,55,200)
-y=y+1;
+stroke(100+z,55,200)
+z=z+1;
 myFractal (250 ,10 , 20,20);
 }
 public void myFractal (float x, float y,float siz, float siz){
 ellipse (x,y,siz, siz) ;
 if (siz < 300)
 {
-myFractal(x,y+siz*a,siz*a,siz*a);
+myFractal(x,y+((siz*a)/2),siz*a,siz*a);
 }
 }
