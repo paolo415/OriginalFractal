@@ -9,13 +9,13 @@ public void draw()
 background (0);
 noFill();
 stroke(100+z,55,200)
-z=z+1;
 myFractal (250 ,10 , 20,20);
 }
 public void myFractal (float x, float y,float siz, float siz){
 ellipse (x,y,siz, siz) ;
 if (siz < 300)
 {
+z=z+1;
 myFractal(x,((siz*a)/2),siz*a,siz*a);
 }
 }
