@@ -1,4 +1,5 @@
 int y=0;
+float a=1.5;
 public void setup ()
 {
 size (500,500)
