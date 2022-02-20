@@ -16,6 +16,6 @@ public void myFractal (float x, float y,float siz, float siz){
 ellipse (x,y,siz, siz) ;
 if (siz < 300)
 {
-myFractal(x,y+((siz*a)/2),siz*a,siz*a);
+myFractal(x,((siz*a)/2),siz*a,siz*a);
 }
 }
